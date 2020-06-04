@@ -14,6 +14,6 @@ is_positive_integer(data)
 positive integer; else `FALSE`
 }
 \description{
-Check that a value is a positive integer. If the value is a string, will return
-`TRUE` if it can be coerced to a positive integer.
+Check that a value is a positive integer. If the value is a string, will
+return `TRUE` if it can be coerced to a positive integer.
 }
