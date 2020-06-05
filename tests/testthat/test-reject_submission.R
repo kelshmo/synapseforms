@@ -9,7 +9,7 @@ test_that("strings are generated from reject_submission", {
   testthat::expect_true(test_reject)
 })
 
-test_that("warning for strings more than 500 chars", {
+test_that("error when strings are more than 500 chars", {
   string <- glue::glue_collapse({seq(1:300)}, sep = ",")
   m <- mockery::mock(TRUE)
   mockery::stub(reject_submission, "rest_put", m)
