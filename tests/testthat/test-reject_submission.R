@@ -1,3 +1,5 @@
+context("accept-reject-submission.R")
+
 test_that("strings are generated from reject_submission", {
   m <- mockery::mock("character strings") # i think this should be a string to mock the reason?
   mockery::stub(reject_submission, "rest_put", m)
